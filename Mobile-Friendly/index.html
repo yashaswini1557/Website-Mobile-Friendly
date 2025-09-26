@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Acme — Internship Project (Responsive)</title>
+  <meta name="description" content="A mobile-first responsive landing page built for an internship task." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">Acme</a>
+
+      <button id="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-primary" href="#signup">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Build beautiful, responsive websites — fast.</h1>
+          <p>Mobile-first patterns, accessible markup, and simple CSS you can reuse in your internship tasks.</p>
+          <p class="cta-row">
+            <a class="btn btn-primary" href="#signup">Try it free</a>
+            <a class="btn" href="#features">Learn more</a>
+          </p>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1526378722072-9a6b8f4b5d36?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Illustration of responsive design" />
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="grid features-grid">
+          <article class="card">
+            <h3>Mobile-first</h3>
+            <p>Designed from the smallest screen up with fluid sizes and rem units.</p>
+          </article>
+
+          <article class="card">
+            <h3>Accessible</h3>
+            <p>Keyboard-friendly navigation and proper aria attributes.</p>
+          </article>
+
+          <article class="card">
+            <h3>Fast & Lightweight</h3>
+            <p>Small CSS footprint and minimal JS — great for internships/demo projects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <div class="container">
+        <h2 class="section-title">Responsive Example</h2>
+        <p>Resize your browser or open DevTools › Toggle device toolbar to test breakpoints.</p>
+
+        <div class="showcase">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project sample screenshot" />
+        </div>
+      </div>
+    </section>
+
+    <section id="signup" class="signup">
+      <div class="container signup-inner">
+        <div>
+          <h2>Get started — it's free</h2>
+          <p>Fork the repo, customize, and submit your GitHub link as required.</p>
+        </div>
+        <form id="contact" action="#" class="signup-form" aria-label="Sign up form">
+          <label>
+            <span class="sr-only">Email</span>
+            <input type="email" name="email" placeholder="your@email.com" required />
+          </label>
+          <button class="btn btn-primary" type="submit">Join</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Acme. Built for internship submission.</p>
+      <p class="small">View on <a href="#" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
